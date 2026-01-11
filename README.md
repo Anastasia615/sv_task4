@@ -70,9 +70,8 @@ python src/evaluate_detector.py --data archive --checkpoint runs/sign_better2/ch
 ```bash
 python src/infer_detector.py --data archive --checkpoint runs/sign_better2/checkpoint_last.pt --images archive/images/image_000000.jpg --output runs/sign_better2/preds --device cpu --score 0.05 --topk 5
 ```
-Картинки сохраняются в `runs/sign_better2/preds/`.
 
-Скриншоты предсказаний (добавлены в репозиторий для отчёта):
+Скриншоты предсказаний :
 
 ![Prediction 1](examples/pred_image_000000.jpg)
 ![Prediction 2](examples/pred_image_000001.jpg)
