@@ -1,0 +1,3 @@
+generation_script.py:
+To create additional images, reuse the sample generator functions and run in chunks.
+For 100k+ images, generate in batches and merge CSVs. Use multiprocessing for speed.
