@@ -72,6 +72,12 @@ python src/infer_detector.py --data archive --checkpoint runs/sign_better2/check
 ```
 Картинки сохраняются в `runs/sign_better2/preds/`.
 
+Скриншоты предсказаний (добавлены в репозиторий для отчёта):
+
+![Prediction 1](examples/pred_image_000000.jpg)
+![Prediction 2](examples/pred_image_000001.jpg)
+![Prediction 3](examples/pred_image_000002.jpg)
+
 ### Быстрый прогон (Faster R-CNN)
 Команда обучения:
 ```bash
@@ -89,4 +95,3 @@ python src/train_detector.py --data archive --epochs 10 --batch-size 1 --num-wor
 ### Примечания
 - Transfer learning выполнен за счет предобученных весов (`weights="DEFAULT"` в `src/train_detector.py`).
 - Низкие значения mAP связаны с ограничением времени обучения и запуском на CPU.
-
